@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prac.css   ">
+</head>
+<body>
+    <form action="/Registro" method="post" id="RegistroDeUsuarios">
+
+        <h2>Registro de Usuarios</h2>
+        <label for = "input-nombre">
+            Nombre completo
+        </label>
+        <input type="text" 
+            id="nombre" name="nombre" 
+            pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" 
+            required>
+    <br>
+
+        <label for="input-edad">
+            Edad
+        </label>
+        <input  
+                type="number"
+                nombre="edad"
+                id="input-edad"
+                min ="1"
+                max="80"
+        >
+    </br>
+        <label for="input-correo">
+            Correo
+        </label>
+        <input 
+                type ="email" 
+                name = "correo" 
+                id="input-correo" 
+                placeholder="Ejemplo@gmail.com"
+                required>
+    <br>
+        <label for = "input-contraseña">
+            Contraseña
+        </label>
+        <input     
+                type="password"
+                name="contraseña"
+                id="input-contraseña"
+                minlength="6"
+                maxlength="12"
+                required>
+    <br>
+        <label for="input-confirmarContraseña">
+            Confirmar contraseña
+        </label>
+        <input      
+                type="password"
+                name="confirmarContraseña"
+                id="input-confirmarContraseña"
+                minlength="6"
+                maxlength="12"
+                required>
+    <br>
+        <label for = "select-genero">
+            Genero
+        </label>
+        <select id="select-genero" name="genero" required>
+                <option selected disabled>Seleccione una opcion</option>
+                <option>Masculino</option>
+                <option>Femenino</option>
+                <option>Otro Xd</option>
+        </select>
+    <br>
+        <label for="checkbox-TyC">
+            Aceptar terminos y condiciones
+        </label>
+        <input
+                type="checkbox"
+                nombre="TyC"
+                id="checkbox-TyC"
+                required>
+    <br>
+        <button type="submit" id="button-enviar" name="BotonEnviar" >Enviar</button>
+    </form>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<script>
+    document.getElementById("RegistroDeUsuarios").addEventListener("submit", function(event) 
+    {
+     let password = document.getElementById("contraseña").value;
+     let confirmarPassword = document.getElementById("confirmarContraseña").value;
+
+     if(password !== confirmarPassword){
+             alert("Las contraseñas no coinciden");
+             event.preventDefault
+     }  
+    }
+ )
+ </script>-->
+
+    
+</body>
+</html>
