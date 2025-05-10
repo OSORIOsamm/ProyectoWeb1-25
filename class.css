@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: aqua;
+    font-size: 5em;
+}
+
+.egresado {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+#detalle-egresado {
+    text-align: justify;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ /*sassa*/
+#especializacion {
+    text-align: justify;
+    margin: 2px;
+    padding: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+h2 {
+    color: blueviolet;
+}
+
+a[href*="Facebook.com"] {
+    color: red;
+}
+
+a[href*="Instagram.com"] {
+    color: blue;
+}
+
+a[href*="TikTok.com"] {
+    color: orange;
+}
