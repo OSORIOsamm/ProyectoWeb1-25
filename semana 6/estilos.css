@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.escena {
+  width: 400px;  
+  height: 250px;   
+  position: relative;
+  margin: 50px auto;
+}
+
+.rectangulo {
+  width: 300px;
+  height: 150px;
+  background-color: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cohete {
+  width: 50px;
+  height: 50px;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT35RbW8wMQOKykqQYJKIkVdmmespshn0P35fnroXAY65Vb9WDNl9BPPESffkefONXQtMw&usqp=CAU') no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: moverCohete 8s forwards;
+}
+
+@keyframes moverCohete {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  24.99% {
+    transform: translateX(350px) translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(350px) translateY(0) rotate(90deg);
+  }
+  49.99% {
+    transform: translateX(350px) translateY(200px) rotate(90deg);
+  }
+  50% {
+    transform: translateX(350px) translateY(200px) rotate(180deg);
+  }
+  74.99% {
+    transform: translateX(0) translateY(200px) rotate(180deg);
+  }
+  75% {
+    transform: translateX(0) translateY(200px) rotate(270deg);
+  }
+  99.99% {
+    transform: translate(0, 0) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}

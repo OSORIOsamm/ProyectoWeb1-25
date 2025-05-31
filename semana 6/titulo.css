@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #add8e6; /* Fondo azul claro */
+}
+
+.container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+
+.rectangle {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: #1e90ff; /* Rectángulo azul */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+}
+
+/* Estilos para los textos "Inicio" y "Fin" */
+.label {
+    position: absolute;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
+.inicio {
+    top: -40px;
+    left: -40px;
+}
+
+.fin {
+    top: -40px;
+    left: -40px;
+}
+
+/* Animación del cohete alrededor del rectángulo */
+.rocket {
+    position: absolute;
+    font-size: 32px;
+    animation: orbit 8s linear infinite;
+}
+
+@keyframes orbit {
+    /* Inicio: esquina superior izquierda */
+    0% {
+        transform: translate(-50%, -50%);
+        top: 0;
+        left: 0;
+    }
+    /* Movimiento hacia la derecha (borde superior) */
+    25% {
+        transform: translate(50%, -50%);
+        top: 0;
+        left: 100%;
+    }
+    /* Bajando por el lado derecho */
+    50% {
+        transform: translate(50%, 50%);
+        top: 100%;
+        left: 100%;
+    }
+    /* Movimiento hacia la izquierda (borde inferior) */
+    75% {
+        transform: translate(-50%, 50%);
+        top: 100%;
+        left: 0;
+    }
+    /* Subiendo por el lado izquierdo (hacia el inicio) */
+    100% {
+        transform: translate(-50%, -50%);
+        top: 0;
+        left: 0;
+    }
+}

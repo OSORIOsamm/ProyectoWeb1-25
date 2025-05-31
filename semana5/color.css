@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.to-top {
+    border: 1px solid;
+    background: linear-gradient(to top, coral, blanchedalmond);
+}
+
+.to-deg{
+    border: 1px solid;
+    background: linear-gradient(45deg, red 50%, green 35%);
+}
+
+.radian{
+    border: 1px solid;
+    background: linear-gradient(to top, red, blanchedalmond);
+}
+
